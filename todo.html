@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset~"UTF-8">
+  <title>My Vue App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <h3>My Todo list</h3>
+    <ul>
+      <!-- <li>{{todos[0]}}</li>
+      <li>{{todos[1]}}</li>
+      <li>{{todos[2]}}</li> -->
+      <!-- ループ処理に書き換え -->
+      <li v-for="todo in todos">{{todo}}</li>
+    </ul>
+    <form>
+      <input type="text">
+      <input type="submit" value="Add">
+    </form>
+  </div>
+
+
+  <!-- 本番バージョン、サイズと速度のために最適化されています -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
